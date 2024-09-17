@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="alert alert-primary" role="alert" style="text-align: center; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #e9ecef;">
+        <h1>Your Short URL: <a href="{{ obj }}" style="color: #007bff;">domain.com/{{ short_url }}</a></h1>
+        <a href="{{ obj }}">
+            <button type="button" class="btn" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; margin-top: 20px; cursor: pointer;">
+                Go To Website
+            </button>
+        </a>
+    </div>
+</div>
+{% endblock content %}
